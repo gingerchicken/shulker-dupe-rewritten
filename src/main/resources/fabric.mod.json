@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "shulkerdupe",
+  "version": "${version}",
+
+  "name": "Shulker Dupe",
+  "description": "A more open/libre version of the old shulker mod.",
+  "authors": [
+    "gingerchicken"
+  ],
+  "contact": {
+    "homepage": "https://github.com/gingerchicken/shulker-dupe-rewritten",
+    "sources": "https://github.com/gingerchicken/shulker-dupe-rewritten"
+  },
+
+  "license": "MIT",
+  "icon": "assets/shulkerdupe/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.shulker.dupe.ShulkerDupe"
+    ]
+  },
+  "mixins": [
+    "shulkerdupe.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
