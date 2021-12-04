@@ -20,19 +20,21 @@ public class ShulkerBoxScreenMixin extends Screen {
 
     @Inject(at = @At("TAIL"), method = "render(Lnet/minecraft/client/util/math/MatrixStack;IIF)V")
     public void renderScreen(MatrixStack matrices, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-        // TODO Centre the buttons
-        double x = 0;
-        double y = 0;
+        int totalButtons = 2;
         double width = 50;
+        double height = 20;
 
-        this.addDrawableChild(new ButtonWidget((int)x, (int)y, (int)width, 20, Text.of("Dupe"), (button) -> {
+        double x = ShulkerDupe.CLIENT.getWindow().getScaledWidth() / 2 - (totalButtons - 1)*width;
+        double y = 32/ShulkerDupe.CLIENT.getWindow().getScaleFactor();
+
+        this.addDrawableChild(new ButtonWidget((int)x, (int)y, (int)width, (int)height, Text.of("Dupe"), (button) -> {
             ShulkerDupe.mode = ShulkerDupe.DupeMode.DUPE_SLOT0;
             ShulkerDupe.performDupe = true;
         }));
 
         x += width;
 
-        this.addDrawableChild(new ButtonWidget((int)x, (int)y, (int)width, 20, Text.of("Dupe All"), (button) -> {
+        this.addDrawableChild(new ButtonWidget((int)x, (int)y, (int)width, (int)height, Text.of("Dupe All"), (button) -> {
             ShulkerDupe.mode = ShulkerDupe.DupeMode.DUPE_ALL;
             ShulkerDupe.performDupe = true;
         }));
