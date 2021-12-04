@@ -1,4 +1,4 @@
-# Shulker Dupe Re-written
+# Shulker Dupe Rewritten
 <p align="center">
     <img src="src/main/resources/assets/shulkerdupe/icon.png" alt="Gradlew Build" width="256px"/>
     <br>
