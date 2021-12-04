@@ -24,6 +24,14 @@ public class ShulkerDupe implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger("shulker-dupe");
 	public static final MinecraftClient CLIENT = MinecraftClient.getInstance();
 
+	public static enum DupeMode {
+		DUPE_ALL,
+		DUPE_SLOT0
+	}
+
+	public static Boolean performDupe = false;
+	public static DupeMode mode = DupeMode.DUPE_SLOT0;
+
 	public static void handlePacket(Packet<?> packet, CallbackInfo ci) {
 		if (!ShulkerDupe.performDupe) return;
 		
@@ -71,9 +79,6 @@ public class ShulkerDupe implements ModInitializer {
 			new ClickSlotC2SPacket(handler.syncId, 0, slot, 0, SlotActionType.QUICK_MOVE, itemStack, stack)
 		);
 	}
-
-	public static Boolean performDupe = false;
-
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
