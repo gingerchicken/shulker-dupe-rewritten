@@ -32,6 +32,25 @@ public class ShulkerDupe implements ModInitializer {
 	public static Boolean performDupe = false;
 	public static DupeMode mode = DupeMode.DUPE_SLOT0;
 
+	// Perform the trolling
+	public static void takeItems() {
+		switch (mode) {
+			case DUPE_SLOT0: {
+				takeItem(0);
+				
+				break;
+			}
+
+			case DUPE_ALL: {
+				for (int i = 0; i < 27; i++) {
+					takeItem(i);
+				}
+
+				break;
+			}
+		}
+	}
+
 	public static void handlePacket(Packet<?> packet, CallbackInfo ci) {
 		if (!ShulkerDupe.performDupe) return;
 		
@@ -39,7 +58,8 @@ public class ShulkerDupe implements ModInitializer {
 		PlayerActionC2SPacket actionC2SPacket = (PlayerActionC2SPacket)packet;
 
 		if (actionC2SPacket.getAction() != PlayerActionC2SPacket.Action.STOP_DESTROY_BLOCK) return;
-		takeItem(0);
+		
+		takeItems();
 	}
 
 	public static Boolean doTick() {
