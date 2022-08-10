@@ -101,6 +101,6 @@ public class ShulkerDupe implements ModInitializer {
 	}
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		// TODO Auto-generated method stub
 	}
 }
