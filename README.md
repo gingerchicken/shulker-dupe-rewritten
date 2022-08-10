@@ -8,3 +8,31 @@
 </p>
 
 A more libre implementation of the original [shulker dupe mod](https://github.com/gingerchicken/shulker-dupe) built so that people can use it in whatever projects they like.
+
+## Installation
+This modification runs on [**Fabric**](https://fabricmc.net/) for **Minecraft: Java Edition**, so make sure you have Fabric installed properly before you try to install this mod. To start installing the mod, you must obtain the mod's jar file, this can be done two ways:
+
+### Obtaining the jar file
+1. Download the jar file from the [release page](https://github.com/gingerchicken/shulker-dupe-rewritten/releases).
+2. [Build the mod from source](#build).
+
+### Installing
+You will need one of the dependencies for the mod to work, this is the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?filter-game-version=1738749986%3a73250), you simply place this in your mods folder next to the shulker dupe mod.
+
+## Build
+To build the mod from source you will need **OpenJDK 17** for building the mod, however I will assume you already have this installed. 
+
+After you must complete the following steps:
+
+### GNU/Linux
+
+```bash
+$ ./gradlew build
+```
+
+### Windows
+I advise that you use PowerShell to run the build command.
+
+```powershell
+> ./gradlew build
+```
