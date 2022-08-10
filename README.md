@@ -19,6 +19,8 @@ This modification runs on [**Fabric**](https://fabricmc.net/) for **Minecraft: J
 ### Installing
 You will need one of the dependencies for the mod to work, this is the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?filter-game-version=1738749986%3a73250), you simply place this in your mods folder next to the shulker dupe mod.
 
+One **both** the FabricAPI and the shulker dupe mod are placed into your mods folder, you should be able to launch Minecraft and have fun duping!
+
 ## Build
 To build the mod from source you will need **OpenJDK 17**, however I will assume you already have this installed. 
 
