@@ -9,6 +9,11 @@
 
 A more libre implementation of the original [shulker dupe mod](https://github.com/gingerchicken/shulker-dupe) built so that people can use it in whatever projects they like.
 
+## Disclaimer
+As you may have noticed from the link above, this is a fork, **I am not the original author of the mod**, this would in fact be **[Coderx-Gamer](https://github.com/Coderx-Gamer)**
+
+> At the time of re-writing this mod, the original author had not licensed their code, meaning that I had no write to use it, hence why I re-wrote it! For more information, please check out [issue #9](https://github.com/gingerchicken/shulker-dupe-rewritten/issues/9)
+
 ## Installation
 This modification runs on [**Fabric**](https://fabricmc.net/) for **Minecraft: Java Edition**, so make sure you have Fabric installed properly before you try to install this mod. To start installing the mod, you must obtain the mod's jar file, this can be done two ways:
 
