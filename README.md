@@ -7,7 +7,7 @@
     <a href="https://minecraft.net/"><img src="https://img.shields.io/badge/MC-1.18.2-brightgreen.svg" alt="Minecraft"/></a>
 </p>
 
-A more libre implementation of the original [shulker dupe mod](https://github.com/gingerchicken/shulker-dupe) built so that people can use it in whatever projects they like.
+A more libre implementation of the original [shulker dupe mod](https://github.com/Coderx-Gamer/shulker-dupe) built so that people can use it in whatever projects they like.
 
 ## Disclaimer
 As you may have noticed from the link above, this is a fork, **I am not the original author of the mod**, this would in fact be **[Coderx-Gamer](https://github.com/Coderx-Gamer)**
