@@ -4,8 +4,9 @@
   "version": "${version}",
 
   "name": "Shulker Dupe",
-  "description": "A more open/libre version of the old shulker mod.",
+  "description": "A more open/libre version of an old shulker mod.",
   "authors": [
+    "coderx-gamer",
     "gingerchicken"
   ],
   "contact": {
